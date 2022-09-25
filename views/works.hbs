@@ -1,0 +1,33 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <nav>
+    <p><a href="/home">Home</a></p>
+    <p><a href="/about">About</a></p>
+    <p><a href="/works">Works</a></p>
+    <p><a href="/gallery">Photo Gallery</a></p>
+  </nav>
+
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th colspan="2">Discography</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each anime}}
+          <tr>
+            <td>{{name}}</td>
+            <td>{{year}}</td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </body>
+</html>
